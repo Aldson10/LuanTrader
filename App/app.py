@@ -25,7 +25,7 @@ def load_data(league, season):
     league = 'F1'
   if selected_league == 'Scotland':
     league = 'SC0'
-  if selected_league == 'Scotland':
+  if selected_league == 'Netherlands':
     league = 'Nl'
    
   if selected_season == '2021/2022':

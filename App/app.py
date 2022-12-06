@@ -5,7 +5,7 @@ import numpy as np
 st.title("Web App Football Data")
 
 st.sidebar.header("Leagues")
-selected_league = st.sidebar.selectbox('League',['England','Germany','Italy','Spain','France','Scotland','Netherlands','Portugal','Turkey'])
+selected_league = st.sidebar.selectbox('League',['England','Germany','Italy','Spain','France','Scotland','Netherlands','Portugal','Turkey','Brazil'])
 
 st.sidebar.header("Season")
 selected_season = st.sidebar.selectbox('Season', ['2021/2022','2020/2021','2019/2020'])
@@ -31,6 +31,8 @@ def load_data(league, season):
     league = 'Pl'
   if selected_league == 'Turkey':
     league = 'Tl'
+  if selected_league == 'Brazil':
+    league = 'BRA'
    
   if selected_season == '2021/2022':
     season = '2122'

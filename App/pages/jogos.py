@@ -12,6 +12,8 @@ dia = st.date_input(
 
 def load_data_jogos():
     data_jogos = pd.read_csv("https://github.com/futpythontrader/YouTube/blob/main/Jogos_do_Dia_FlashScore/"+str(dia)+"_Jogos_do_Dia_FlashScore.csv?raw=true")
+def load_data_jogos():
+    data_jogos = pd.read_csv("https://github.com/futpythontrader/YouTube/tree/main/Jogos_do_Dia/"+str(dia)+"_Jogos_do_Dia_FlashScore.csv?raw=true")
     
     return data_jogos
 
